@@ -1,27 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Qwitcher+Grypen:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Oswald", sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
+
 body{
-    background-color: rgb(255, 207, 212);
+    background-color: rgb(229, 178, 205);
 }
+
 .container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 20px;
 }
+
 .input-container{
     width: 100%;
     max-width: 500px;
     text-align: center;
-    padding: 20;
+    padding: 20px;
 }
+
 .input-container input{
     border: none;
     outline: none;
@@ -30,20 +34,24 @@ body{
     border-radius: 4px;
     font-size: 16px;
 }
+
 .input-container input[type="text"]{
     width: 70%;
 }
+
 .input-container input[type="button"]{
-    background-color: rgb(15, 171, 223);
-    color: rgb(146, 41, 41);
+    background-color: #3da33d;
+    color: #fff;
     font-weight: 700;
     margin-left: 8px;
     cursor: pointer;
-    padding: 14px 24px;
+    padding: 12px 24px;
 }
+
 .input-container input[type="button"]:hover{
-    background-color: rgb(211, 144, 144);
+    background-color: #60b160;
 }
+
 ul{
     width: 70%;
     max-width: 450px;
@@ -52,6 +60,7 @@ ul{
     flex-direction: column;
     align-items: center; */
 }
+
 ul li{
     list-style-type: none;
     cursor: pointer;
@@ -64,4 +73,30 @@ ul li{
     align-items: center;
     justify-content: space-between;
     transition: background-color 0.5s;
+}
+
+ul li:hover{
+    background-color: #cbcaca;
+}
+
+ul li p{
+    flex-grow: 1;
+    padding: 2px;
+}
+.btn{
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: none;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.deleteBtn{
+    color: #ff0000;
+}
+
+.editBtn{
+    color: #008000;
 }
